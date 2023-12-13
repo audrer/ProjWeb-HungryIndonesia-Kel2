@@ -1,0 +1,128 @@
+<?php
+$host = "localhost";
+$dbusername = "root";
+$dbpassword = "";
+$dbname = "HungryIndonesia";
+
+$conn = new mysqli($host, $dbusername, $dbpassword, $dbname);
+
+?>
+
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href= "aboutusfb.css">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap">
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap">
+  <title>AboutUs</title>
+</head>
+
+<body>
+  <nav class="navbar">
+      <div class="logo">
+          <a href="#" class="logo-link">
+              <p class="logo-text">HungryIndonesia</p>
+          </a>
+      </div>
+
+      <div class="drawer-icon">
+          <button onclick="handleButtonClick()">
+              <img src="bars3.png" alt="bars3">
+          </button>
+      </div>
+      <div class="drawer-container">
+          <ul class="drawer-list">
+              <li>Unknown</li>
+          </ul>
+          <ul class="drawer-list">
+              <li>Search Recipe</li>
+              <li>Search Resto</li>
+              <li>About Us</li>
+              <li>FAQ</li>
+              <li>My Review</li>
+              <li>Recent Recipe</li>
+              <li>My Cooklist</li>
+              <li>Log Out</li>
+          </ul>
+      </div>
+  </nav>
+
+  <main>
+    <div class="title">
+        <div class="back-icon">
+            <button onclick="handleButtonClick()">
+                <img src="back_arrow.png" alt="">
+            </button>
+        </div>
+            <h1>About Us</h1>        
+    </div>
+    
+    <p class="about-us-content">
+      HungryIndonesia is a website dedicated to Indonesian traditional cuisine, featuring authentic recipes from all provinces across the
+      country. We also aim to simplify restaurant searches for those who are interested in Indonesian traditional dishes. Our unique
+      approach involves providing alternative ingredients in our recipes to give users more options when cooking these dishes.
+      Explore the Indonesian traditional dishes you want to cook or find Indonesian restaurants to visit on HungryIndonesia.
+    </p>
+
+    <p class="about-us-happy">
+      Happy cooking and happy food hunting, HungryPeople!
+    </p>
+
+
+    <div class="about-us-cta">
+      <h3 class="about-us-cta-title">Reach Us!</h3>
+      <button class="about-us-feedback-button">Give Feedback</button>
+    </div>
+    <div>
+      <button class="about-us-contactus-button">Contact Us</button>
+    </div>
+
+    <h2 class="about-us-subtitle2">Uncover Tasty Treasures, One Recipe and Restaurant at a Time</h2>
+
+    <script src="aboutusfb.js"></script>
+    
+    <hr class="footer-line">
+    <footer>
+        <div class="footer-kanan">
+            <p class="footer-text">Company</p>
+            <div class="footer-list">
+                <a href="#" class="footer-list">About Us</a>
+            </div>
+            <div class="footer-list">
+                <a href="#" class="footer-list">FAQ</a>
+            </div>
+        </div>
+        <div class="footer-tengah">
+            <p class="footer-text">Products</p>
+            <div class="footer-list">
+                <a href="#" class="footer-list">Indonesian Recipe</a>
+            </div>
+            <div class="footer-list">
+                <a href="#" class="footer-list">Indonesia Restaurant</a>
+            </div>
+        </div>
+        <div class="footer-kiri">
+            <p class="footer-text">Support</p>
+            <div class="footer-list">
+                <a href="#" class="footer-list">Help</a>
+            </div>
+            <div class="footer-list">
+                <a href="#" class="footer-list">Terms</a>
+            </div>
+            <div class="footer-list">
+                <a href="#" class="footer-list">Privacy</a>
+            </div>
+        </div>
+    </footer>
+    <hr class="footer-line">
+    <div class="gambar-footer">
+        <img src= "ig twitter facebook.png" alt="">
+    </div>
+</body>
+
+
+</html>

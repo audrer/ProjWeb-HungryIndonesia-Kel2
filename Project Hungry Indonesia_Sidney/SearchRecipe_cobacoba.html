@@ -1,0 +1,459 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>coba-coba</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/flowbite@1.4.0/dist/flowbite.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap">
+    <style>
+        body, h1, p, a {
+            font-family: 'Ubuntu', sans-serif;
+        }
+
+        .font-extrabold {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-[#fff9e5]">
+    <div class="min-w-full">
+        <!--Navbar-->
+            <nav class="flex items-center justify-between px-16 bg-[#5F5D2D] bg-opacity-100 fixed-w-full h-20 z-10">
+                <a href="#" class="font-bold text-2xl text-[#fff9e5]">HungryIndonesia</a>                    
+                <a href="#"><img src="Image/menu.png" alt="menu" class="w-9"></a>
+            </nav>
+
+        <div class="col-span-2 sm:col-span-1">
+            <a href="#"><img src="Image/left arrow.png" alt="left arrow" class="w-8 mt-14 ml-24"></a>
+            
+                    <div class="">
+                    <select id="category" class="px-7 text-lg mt-12 font-bold text-[#5F5D2D] bg-[#fff9e5] border-2 border-[#5F5D2D] rounded-3xl transition duration-150 h-12 ease-in ml-4 flex gap-x-2 items-center">
+                        <img src="Image/Polygon 4.png" class="w-3 mt-1 transition duration-150 ease-in" id="rotateArrow">
+                            <option selected="">Select Province</option>
+                            <option value="TV">TV/Monitors</option>
+                            <option value="PC">PC</option>
+                            <option value="GA">Gaming/Console</option>
+                            <option value="PH">Phones</option>
+                        </select>
+                    </div>
+        </div>
+                  <script>
+            const buttonArrow = document.querySelector('#dropdownDefaultButton');
+            const rotateArrow = document.querySelector('#rotateArrow');
+
+            buttonArrow.addEventListener("click", () => {
+              rotateArrow.classList.toggle("rotate-180");
+            });
+          </script>
+
+
+        <section class="items-center flex w-full flex-col items-center">
+            <div class="bg-[#c7c6ad] h-80 w-5/6 border-lime-800 rounded-3xl mt-10 flex">
+                <img src="Image/Soto Betawi.png" class="w-86 h-72 mt-4 ml-4">
+                <div>
+                    <h1 class="text-[#5F5D2D] ml-7 mt-9 text-3xl font-semibold">Soto Betawi</h1>
+                    <p class="text-[#5f5D2D] ml-7 mt-2 text-md mr-56 text-opacity-90">Soto Betawi originates from the BEtawi people, an indigenous group in Jakarta, Indonesia's capital city. This flavorful soup is deeply rooted in the cultural heritage of the ...</p>
+                    <div class="flex">
+                        <img src="Image/map.png" class="w-5 h-5 mt-7 ml-7">
+                        <p class="text-[#5f5D2D] underline ml-2 mt-6 text-lg font-bold">Location</p>
+                    </div>
+                    <div class="flex">
+                        <img src="Image/star.png" class="w-4 h-4 mt-1.5 ml-7">
+                        <p class="text-[#5f5D2D] ml-1 mt-1.5 text-md">4.7 (95 reviews)</p>
+                    </div>
+                    <div class="flex justify-between ml-2">
+                        <p class="text-[#5f5D2D] ml-5 text-md mt-3">Prep time: 30 mins</p>
+                        <p class="text-[#5f5D2D] text-md mt-3">Cook time: 45 mins</p>
+                        <p class="text-[#5f5D2D] text-md mt-3">Total time: 75 mins</p>
+                        <a href="Restaurant_Page.html"><button class="w-36 py-3 mr-9 mt-6 font-semibold text-center text-amber-50 bg-[#ffa30a] rounded-3xl shadow-inner shadow-xl hover:bg-amber-50 hover:text-[#ffa30a]">View Resto</button></a>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-[#c7c6ad] h-80 w-5/6 border-lime-800 rounded-3xl mt-10 flex">
+                <img src="Image/Pempek.png" class="w-86 h-72 mt-4 ml-4">
+                <div>
+                    <h1 class="text-[#5F5D2D] ml-7 mt-9 text-3xl font-semibold">Pempek</h1>
+                    <p class="text-[#5f5D2D] ml-7 mt-2 text-md mr-56 text-opacity-90">Pempek is a traditional food from Palembang, South Sumatera province. This food is made from sago and fish because the majority of people in Bangka are fisherman...</p>
+                    <div class="flex">
+                        <img src="Image/map.png" class="w-5 h-5 mt-7 ml-7">
+                        <p class="text-[#5f5D2D] underline ml-2 mt-6 text-lg font-bold">Location</p>
+                    </div>
+                    <div class="flex">
+                        <img src="Image/star.png" class="w-4 h-4 mt-1.5 ml-7">
+                        <p class="text-[#5f5D2D] ml-1 mt-1.5 text-md">4.7 (95 reviews)</p>
+                    </div>
+                    <div class="flex justify-between ml-2">
+                        <p class="text-[#5f5D2D] ml-5 text-md mt-3">Prep time: 20 mins</p>
+                        <p class="text-[#5f5D2D] text-md mt-3">Cook time: 60 mins</p>
+                        <p class="text-[#5f5D2D] text-md mt-3">Total time: 80 mins</p>
+                        <button class="w-36 py-3 mr-9 mt-6 font-semibold text-center text-amber-50 bg-[#ffa30a] rounded-3xl shadow-inner shadow-xl hover:bg-amber-50 hover:text-[#ffa30a]">View Resto</button>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-[#c7c6ad] h-80 w-5/6 border-lime-800 rounded-3xl mt-10 flex">
+                <img src="Image/Gudeg.png" class="w-86 h-72 mt-4 ml-4">
+                <div>
+                    <h1 class="text-[#5F5D2D] ml-7 mt-9 text-3xl font-semibold">Gudeg</h1>
+                    <p class="text-[#5f5D2D] ml-7 mt-2 text-md mr-56 text-opacity-90">Gudeg is a typical dish of the Special Region of Yogyakarta Province which is made from young jackfruit cooked in coconut milk. The brown color is usually produced by cooking teak leaves together ...</p>
+                    <div class="flex">
+                        <img src="Image/map.png" class="w-5 h-5 mt-7 ml-7">
+                        <p class="text-[#5f5D2D] underline ml-2 mt-6 text-lg font-bold">Location</p>
+                    </div>
+                    <div class="flex">
+                        <img src="Image/star.png" class="w-4 h-4 mt-1.5 ml-7">
+                        <p class="text-[#5f5D2D] ml-1 mt-1.5 text-md">4.7 (95 reviews)</p>
+                    </div>
+                    <div class="flex justify-between ml-2">
+                        <p class="text-[#5f5D2D] ml-5 text-md ml-7 mt-3">Prep time: 20 mins</p>
+                        <p class="text-[#5f5D2D] text-md mt-3">Cook time: 60 mins</p>
+                        <p class="text-[#5f5D2D] text-md mt-3">Total time: 80 mins</p>
+                        <button class="w-36 py-3 mr-9 mt-6 font-semibold text-center text-amber-50 bg-[#ffa30a] rounded-3xl shadow-inner shadow-xl hover:bg-amber-50 hover:text-[#ffa30a]">View Resto</button>
+                    </div>
+                </div>
+            </div>
+            <div class="bg-[#c7c6ad] h-80 w-5/6 border-lime-800 rounded-3xl mt-10 flex">
+                <img src="Image/Coto Makassar.png" class="w-86 h-72 mt-4 ml-4">
+                <div>
+                    <h1 class="text-[#5F5D2D] ml-7 mt-9 text-3xl font-semibold">Coto Makassar</h1>
+                    <p class="text-[#5f5D2D] ml-7 mt-2 text-md mr-56 text-opacity-90">Coto Makassar or Pallu Coto Mangkasarak is a traditional dish from the Makassar Tribe, South SUlawesi. This food is made from beef offal that is boiled for a long time...</p>
+                    <div class="flex">
+                        <img src="Image/map.png" class="w-5 h-5 mt-7 ml-7">
+                        <p class="text-[#5f5D2D] underline ml-2 mt-6 text-lg font-bold">Location</p>
+                    </div>
+                    <div class="flex">
+                        <img src="Image/star.png" class="w-4 h-4 mt-1.5 ml-7">
+                        <p class="text-[#5f5D2D] ml-1 mt-1.5 text-md">4.7 (95 reviews)</p>
+                    </div>
+                    <div class="flex justify-between ml-2">
+                        <p class="text-[#5f5D2D] ml-5 text-md ml-7 mt-3">Prep time: 30 mins</p>
+                        <p class="text-[#5f5D2D] text-md mt-3">Cook time: 45 mins</p>
+                        <p class="text-[#5f5D2D] text-md mt-3">Total time: 75 mins</p>
+                        <button class="w-36 py-3 mr-9 mt-6 font-semibold text-center text-amber-50 bg-[#ffa30a] rounded-3xl shadow-inner shadow-xl hover:bg-amber-50 hover:text-[#ffa30a]">View Resto</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </div>
+
+    <p class="flex justify-center mt-36 text-amber-500 text-lg font-bold">Uncover Tasty Treasures, One Recipe and Restaurant at a Time</p>
+
+    <footer class="">
+        <hr class="h-px my-7 bg-stone-300 border-0 dark:bg-stone-300"/>
+
+        <div class="flex justify-center text-center gap-x-56">
+            <div>
+                <p class="mb-6 text-xl font-bold text-[#5f5D2D]">Company</p>
+                <ul class="text-stone-400 text-lg font-medium">
+                    <li class="mb-4">
+                        <a href="#" class="hover:underline block">About us</a>
+                        <a href="#" class="hover:underline">FAQ</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div>
+                <p class="mb-6 text-md font-bold text-xl text-[#5f5D2D]">Products</p>
+                <ul class="text-stone-400 text-lg font-medium">
+                    <li class="mb-4">
+                        <a href="#" class="hover:underline block">Indonesian Recipe</a>
+                        <a href="#" class="hover:underline">Indonesian Restaurant</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div>
+                <p class="mb-6 text-md font-bold text-xl text-[#5f5D2D]">Support</p>
+                <ul class="text-stone-400 text-lg font-medium">
+                    <li class="mb-4">
+                        <a href="#" class="hover:underline block">Help</a>
+                        <a href="#" class="hover:underline block">Terms</a>
+                        <a href="#" class="hover:underline">Privacy</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <hr class="h-px my-7 bg-stone-300 border-0 dark:bg-stone-300"/>
+        <div class="flex justify-center">
+            <a href="#"><img src="Image/instagram.png" alt="instagram" class="w-7 mr-2"></a>
+            <a href="#"><img src="Image/facebook.png" alt="facebook" class="w-7 mr-2"></a>
+            <a href="#"><img src="Image/twitter.png" alt="twitter" class="w-7"></a>
+        </div>
+        <h3 class="flex justify-center text-[#5F5D2D] text-sm mt-1 mb-14 font-bold">@ 2023 HungryIndonesia. All Right Reserved.</h3>
+    </footer>
+    
+    <div id="dropdown" class="hidden w-22 border-2 border-[#5F5D2D] rounded-3xl bg-[#fff9e5]">
+      <ul class="text-sm text-[#5F5D2D] font-semibold" aria-labelledby="dropdownDefaultButton">
+        <li>
+          <a
+            href="#"
+            class="flex items-center gap-x-6 rounded-t-3xl px-20 py-2 hover:bg-[#aeab88] hover:text-[#fff9e5] hover:duration-300">
+            <p>Aceh</p>
+          </a>
+        </li>
+        <li>
+          <a
+            href="#"
+            class="flex items-center gap-x-6 py-2 hover:bg-[#aeab88] hover:text-[#fff9e5] hover:duration-300">
+            <p>Sumatera Utara</p>
+          </a>
+        </li>
+         <li>
+          <a
+            href="#"
+            class="flex items-center gap-x-6 py-2 hover:bg-[#aeab88] hover:text-[#fff9e5] hover:duration-300">
+            <p>Sumatera Selatan</p>
+          </a>
+        </li>
+         <li>
+          <a
+            href="#"
+            class="flex items-center gap-x-6 py-2 hover:bg-[#aeab88] hover:text-[#fff9e5] hover:duration-300">
+            <p>Sumatera Barat</p>
+          </a>
+        </li>
+         <li>
+          <a
+            href="#"
+            class="flex items-center gap-x-6 py-2 hover:bg-[#aeab88] hover:text-[#fff9e5] hover:duration-300">
+            <p>Bengkulu</p>
+          </a>
+        </li>
+         <li>
+          <a
+            href="#"
+            class="flex items-center gap-x-6 py-2 hover:bg-[#aeab88] hover:text-[#fff9e5] hover:duration-300">
+            <p>Riau</p>
+          </a>
+        </li>
+         <li>
+          <a
+            href="#"
+            class="flex items-center gap-x-6 py-2 hover:bg-[#aeab88] hover:text-[#fff9e5] hover:duration-300">
+            <p>Kepulauan Riau</p>
+          </a>
+        </li>
+         <li>
+          <a
+            href="#"
+            class="flex items-center gap-x-6 py-2 hover:bg-[#aeab88] hover:text-[#fff9e5] hover:duration-300">
+            <p>Jambi</p>
+          </a>
+           <li>
+          <a
+            href="#"
+            class="flex items-center gap-x-6 py-2 hover:bg-[#aeab88] hover:text-[#fff9e5] hover:duration-300">
+            <p>Lampung</p>
+          </a>
+        </li>
+         <li>
+          <a
+            href="#"
+            class="flex items-center gap-x-6 py-2 hover:bg-[#aeab88] hover:text-[#fff9e5] hover:duration-300">
+            <p>Bangka Belitung</p>
+          </a>
+        </li>
+         <li>
+          <a
+            href="#"
+            class="flex items-center gap-x-6 py-2 hover:bg-[#aeab88] hover:text-[#fff9e5] hover:duration-300">
+            <p>Kalimantan Barat</p>
+          </a>
+        </li>
+         <li>
+          <a
+            href="#"
+            class="flex items-center gap-x-6 py-2 hover:bg-[#aeab88] hover:text-[#fff9e5] hover:duration-300">
+            <p>Kalimantan Timur</p>
+          </a>
+        </li>
+         <li>
+          <a
+            href="#"
+            class="flex items-center gap-x-6 py-2 hover:bg-[#aeab88] hover:text-[#fff9e5] hover:duration-300">
+            <p>Kalimantan Selatan</p>
+          </a>
+        </li>
+         <li>
+          <a
+            href="#"
+            class="flex items-center gap-x-6 py-2 hover:bg-[#aeab88] hover:text-[#fff9e5] hover:duration-300">
+            <p>Kalimantan Tengah</p>
+          </a>
+        </li>
+         <li>
+          <a
+            href="#"
+            class="flex items-center gap-x-6 py-2 hover:bg-[#aeab88] hover:text-[#fff9e5] hover:duration-300">
+            <p>Kalimantan Utara</p>
+          </a>
+        </li>
+         <li>
+          <a
+            href="#"
+            class="flex items-center gap-x-6 py-2 hover:bg-[#aeab88] hover:text-[#fff9e5] hover:duration-300">
+            <p>Banten</p>
+          </a>
+        </li>
+         <li>
+          <a
+            href="#"
+            class="flex items-center gap-x-6 py-2 hover:bg-[#aeab88] hover:text-[#fff9e5] hover:duration-300">
+            <p>DKI Jakarta</p>
+          </a>
+        </li>
+         <li>
+          <a
+            href="#"
+            class="flex items-center gap-x-6 py-2 hover:bg-[#aeab88] hover:text-[#fff9e5] hover:duration-300">
+            <p>Jawa Barat</p>
+          </a>
+        </li>
+         <li>
+          <a
+            href="#"
+            class="flex items-center gap-x-6 py-2 hover:bg-[#aeab88] hover:text-[#fff9e5] hover:duration-300">
+            <p>Jawa Tengah</p>
+          </a>
+        </li>
+         <li>
+          <a
+            href="#"
+            class="flex items-center gap-x-6 py-2 hover:bg-[#aeab88] hover:text-[#fff9e5] hover:duration-300">
+            <p>DIY</p>
+          </a>
+        </li>
+         <li>
+          <a
+            href="#"
+            class="flex items-center gap-x-6 py-2 hover:bg-[#aeab88] hover:text-[#fff9e5] hover:duration-300">
+            <p>Jawa Timur</p>
+          </a>
+        </li>
+         <li>
+          <a
+            href="#"
+            class="flex items-center gap-x-6 py-2 hover:bg-[#aeab88] hover:text-[#fff9e5] hover:duration-300">
+            <p>Bali</p>
+          </a>
+        </li>
+         <li>
+          <a
+            href="#"
+            class="flex items-center gap-x-6 py-2 hover:bg-[#aeab88] hover:text-[#fff9e5] hover:duration-300">
+            <p>Nusa Tenggara Timur</p>
+          </a>
+        </li>
+         <li>
+          <a
+            href="#"
+            class="flex items-center gap-x-6 py-2 hover:bg-[#aeab88] hover:text-[#fff9e5] hover:duration-300">
+            <p>Nusa Tenggara Barat</p>
+          </a>
+        </li>
+         <li>
+          <a
+            href="#"
+            class="flex items-center gap-x-6 py-2 hover:bg-[#aeab88] hover:text-[#fff9e5] hover:duration-300">
+            <p>Gorontalo</p>
+          </a>
+        </li>
+         <li>
+          <a
+            href="#"
+            class="flex items-center gap-x-6 py-2 hover:bg-[#aeab88] hover:text-[#fff9e5] hover:duration-300">
+            <p>Sulawesi Barat</p>
+          </a>
+        </li>
+         <li>
+          <a
+            href="#"
+            class="flex items-center gap-x-6 py-2 hover:bg-[#aeab88] hover:text-[#fff9e5] hover:duration-300">
+            <p>Sulawesi Tengah</p>
+          </a>
+        </li>
+         <li>
+          <a
+            href="#"
+            class="flex items-center gap-x-6 py-2 hover:bg-[#aeab88] hover:text-[#fff9e5] hover:duration-300">
+            <p>Sulawesi Utara</p>
+          </a>
+        </li>
+         <li>
+          <a
+            href="#"
+            class="flex items-center gap-x-6 py-2 hover:bg-[#aeab88] hover:text-[#fff9e5] hover:duration-300">
+            <p>Sulawesi Tenggara</p>
+          </a>
+        </li>
+         <li>
+          <a
+            href="#"
+            class="flex items-center gap-x-6 py-2 hover:bg-[#aeab88] hover:text-[#fff9e5] hover:duration-300">
+            <p>Sulawesi Selatan</p>
+          </a>
+        </li>
+         <li>
+          <a
+            href="#"
+            class="flex items-center gap-x-6 py-2 hover:bg-[#aeab88] hover:text-[#fff9e5] hover:duration-300">
+            <p>Maluku Utara</p>
+          </a>
+        </li>
+         <li>
+          <a
+            href="#"
+            class="flex items-center gap-x-6 py-2 hover:bg-[#aeab88] hover:text-[#fff9e5] hover:duration-300">
+            <p>Maluku</p>
+          </a>
+        </li>
+         <li>
+          <a
+            href="#"
+            class="flex items-center gap-x-6 py-2 hover:bg-[#aeab88] hover:text-[#fff9e5] hover:duration-300">
+            <p>Papua Barat</p>
+          </a>
+        </li>
+         <li>
+          <a
+            href="#"
+            class="flex items-center gap-x-6 py-2 hover:bg-[#aeab88] hover:text-[#fff9e5] hover:duration-300">
+            <p>Papua</p>
+          </a>
+        </li>
+         <li>
+          <a
+            href="#"
+            class="flex items-center gap-x-6 py-2 hover:bg-[#aeab88] hover:text-[#fff9e5] hover:duration-300">
+            <p>Papua Tengah</p>
+          </a>
+        </li>
+         <li>
+          <a
+            href="#"
+            class="flex items-center gap-x-6 py-2 hover:bg-[#aeab88] hover:text-[#fff9e5] hover:duration-300">
+            <p>Papua Pegununggan</p>
+          </a>
+        </li>
+         <li>
+          <a
+            href="#"
+            class="flex items-center gap-x-6 py-2 hover:bg-[#aeab88] hover:text-[#fff9e5] hover:duration-300">
+            <p>Papua Selatan</p>
+          </a>
+        </li>
+         <li>
+          <a
+            href="#"
+            class="flex items-center gap-x-6 rounded-b-3xl py-2 hover:bg-[#aeab88] hover:text-[#fff9e5] hover:duration-300">
+            <p>Papua Barat Daya</p>
+          </a>
+        </li>
+        </li>
+      </ul>
+    </div>
+</body>
+</html>

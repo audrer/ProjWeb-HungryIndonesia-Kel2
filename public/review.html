@@ -1,0 +1,157 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../style/review.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap">
+    <script src="../script/review.js"></script>
+    <title>Review</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="#" class="logo-link">
+                <p class="logo-text">HungryIndonesia</p>
+            </a>
+        </div>
+        <div class="drawer-icon">
+            <button onclick="handleButtonClick()">
+                <img src="../element/burger.png" alt="">
+            </button>
+        </div>
+        <div class="drawer-container">
+            <ul class="drawer-list">
+                <li>Unknown</li>
+            </ul>
+            <ul class="drawer-list">
+                <li><a href="../Project Hungry Indonesia_Sidney/SearchRecipe_Page.html">Search Recipe</a></li>
+                <li><a href="../Project Hungry Indonesia_Sidney/Search_Resto_Page.html">Search Resto</a></li>
+                <li><a href="../PunyaJiel/PunyaJiel/AboutUs/">About Us</li>
+                <li><a href="../public/faq.html">FAQ</a></li>
+                <li><a href="../public/review.html">Review</a></li>
+                <li>Recent Recipe</li>
+                <li><a href="../public/cooklists.html">My Cooklist</a></li>
+                <li>Log Out</li>
+            </ul>
+        </div>
+    </nav>
+        
+    <div class="title">
+        <div class="back-icon">
+            <button onclick="handleButtonClick()">
+                <img src="../element/backbutton.png" alt="">
+            </button>
+        </div>
+            <h1>My Review</h1>        
+    </div>
+    
+    <div class="list-dropdown">
+        <div class="rounded" onclick="toggleAnswer(this)">
+            <div class="list-header" id="sort-by-header">
+                <p class="list">Sort by</p>
+                <div class="dropdown">
+                    <img src="../element/Polygon 4.png" alt="">
+                </div>
+            </div>
+            <ul class="list-ans">
+            <li onclick="setSortBy('Most Liked')">Most Liked</li>
+            <li onclick="setSortBy('Newest')">Newest</li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="spaces"><br></div>
+
+    <div class="review" id="review-1">
+        <div class="judul-review">Es Pisang Ijo</div>
+        <div class="star-rating" data-rating="1">
+            <div class="star-container">
+                <div class="star" data-value="1"></div>
+                <div class="star" data-value="2"></div>
+                <div class="star" data-value="3"></div>
+                <div class="star" data-value="4"></div>
+                <div class="star" data-value="5"></div>
+            </div>
+        </div>
+        <div class="rating-info" id="rating-info-review-1">0/5</div>
+        <div class="isi">Saya adalah penggemar berat Es Pisang Ijo, dan resep ini benar-benar memuaskan selera saya. Saya tidak sabar untuk membagikannya dengan teman-teman dan keluarga saya. Panduan langkah demi langkahnya sangat membantu, bahkan bagi pemula seperti saya. Hasil akhirnya spektakuler!</div>
+    </div>
+    <div class="review" id="review-2">
+        <div class="judul-review">Rendang</div>
+        <div class="star-rating" data-rating="1">
+            <div class="star-container">
+                <div class="star" data-value="1"></div>
+                <div class="star" data-value="2"></div>
+                <div class="star" data-value="3"></div>
+                <div class="star" data-value="4"></div>
+                <div class="star" data-value="5"></div>
+            </div>
+        </div>
+        <div class="rating-info" id="rating-info-review-2">0/5</div>
+        <div class="isi">Saya baru saja mencoba resep Rendang ini, dan hasilnya benar-benar mengagumkan! Daging sapi menjadi sangat lembut dan berempah, dan kuahnya kental dan penuh dengan cita rasa. Terima kasih atas resep yang luar biasa ini!</div>
+    </div>
+    <div class="review" id="review-3">
+        <div class="judul-review">Soto Betawi</div>
+        <div class="star-rating" data-rating="1">
+            <div class="star-container">
+                <div class="star" data-value="1"></div>
+                <div class="star" data-value="2"></div>
+                <div class="star" data-value="3"></div>
+                <div class="star" data-value="4"></div>
+                <div class="star" data-value="5"></div>
+            </div>
+        </div>
+        <div class="rating-info" id="rating-info-review-3">0/5</div>
+        <div class="isi">Saya sudah mencoba beberapa resep Soto Betawi sebelumnya, tetapi resep ini benar-benar mencuri hati saya. Kuahnya benar-benar autentik, dan daging sapi yang lembut adalah puncaknya. Saya senang dengan instruksi yang jelas dan mudah diikuti. Hasil akhirnya luar biasa, dan saya pasti akan membuatnya lagi. Keluarga saya juga tidak bisa mengkonsumsi santan terlalu banyak sehingga saya mengikuti bahan alternatif yang diberikan dan hasilnya masih sangat memuaskan.</div>
+    </div>
+    
+
+
+    <p class="otwclosing">Uncover Tasty Treasures, One Recipe and Restaurant at a Time</p>
+    <hr class="footer-line">
+    <footer>
+        <div class="footer-kanan">
+            <p class="footer-text">Company</p>
+            <div class="footer-list">
+                <a href="#" class="footer-list">About Us</a>
+            </div>
+            <div class="footer-list">
+                <a href="#" class="footer-list">FAQ</a>
+            </div>
+        </div>
+        <div class="footer-tengah">
+            <p class="footer-text">Products</p>
+            <div class="footer-list">
+                <a href="#" class="footer-list">Indonesian Recipe</a>
+            </div>
+            <div class="footer-list">
+                <a href="#" class="footer-list">Indonesia Restaurant</a>
+            </div>
+        </div>
+        <div class="footer-kiri">
+            <p class="footer-text">Support</p>
+            <div class="footer-list">
+                <a href="#" class="footer-list">Help</a>
+            </div>
+            <div class="footer-list">
+                <a href="#" class="footer-list">Terms</a>
+            </div>
+            <div class="footer-list">
+                <a href="#" class="footer-list">Privacy</a>
+            </div>
+        </div>
+    </footer>
+    <hr class="footer-line">
+    <div class="gambar-footer">
+        <img src="../element/ig twitter facebook.png" alt="">
+    </div>
+</body>
+
+
+</html>
+
+

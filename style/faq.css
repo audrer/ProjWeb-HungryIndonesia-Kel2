@@ -1,0 +1,272 @@
+body {
+    margin-top: 80px;
+    margin-left: 0px;
+    padding: 0;
+    background: #FFFAE5;
+}
+
+.navbar {
+    /* width: 1440px; */
+    width: auto;
+    height: 80px;
+    background: #5F5D2D;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+
+.logo-text {
+    width: 195px;
+    height: 28px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #FFFAE5;
+   
+    margin-left: 72px;
+}
+
+.logo-link{
+    text-decoration: none;
+    color: inherit;
+}
+
+.drawer-icon{
+    margin-right: 72px;
+}
+
+.drawer-icon button{
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.drawer-container {
+    position: absolute;
+    right: 0;
+    top: 50px;
+    width: 188px;
+    height: 453px;
+    border-radius: 30px 0 0 30px;
+    background-color: #5F5D2D;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: none;
+   
+}
+
+.drawer-container.active {
+    transform: translateY(0);
+}
+
+.drawer-list {
+    list-style-type: none;
+    padding: 10px;
+}
+
+.drawer-list li {
+    font-size: 20px;
+    color: #FFFAE5;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 10px;
+
+}
+
+.drawer-list li:hover {
+    background-color: #555;
+}
+
+.back-icon button{
+    background: none;
+    border: none;
+    cursor: pointer; 
+    display: flex;
+    align-items: center; 
+    
+}
+
+.back-icon{
+    margin-left:80px;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.back-icon button img{
+    width: 32px;
+    height: 32px;
+    margin-right: 8px;
+}
+
+.title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+h1{
+    letter-spacing: 0em;
+    font-size: 36px;
+    line-height: 54px;
+    color: #5F5D2D;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    margin-right: 100px;
+    text-align: center;
+    flex-grow: 1;
+    
+}
+
+.list-dropdown{
+    margin-top: 40px;
+}
+
+.rounded{
+    border: 3px solid #5F5D2D;
+    border-radius: 60px;
+    padding: 24px 48px 24px 48px;
+    margin-bottom:40px;
+    margin-left: 72px;
+    margin-right: 72px;
+}
+
+.list {
+    font-size: 20px;
+    color: #5F5D2D;
+    font-family: 'Poppins', sans-serif;
+}
+
+.list-ans {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.list-ans li {
+    font-size: 20px;
+    color: #5F5D2D;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 10px;
+}
+
+.list-dropdown .rounded .list-ans {
+    display: none;
+}
+
+.list-dropdown .rounded.show-answer .list-ans {
+    display: block;
+}
+
+.list-header{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.button-rounded{
+    border: 3px solid #5F5D2D;
+    border-radius: 60px;
+    padding: 24px 48px 24px 48px;
+    margin-bottom:40px;
+    margin-left: 72px;
+    margin-right: 72px;
+    background: #5F5D2D;
+}
+
+.tulisan{
+    gap: 10px;
+    weight: 600px;
+    font-size: 20px;
+    font-family: 'Poppins', sans-serif;
+    color: #FFFFFF;
+    margin:0;
+    text-align: center;
+    flex-grow: 1;
+    cursor: pointer;
+}
+
+.otwclosing{
+    margin:0;
+    text-align: center;
+    flex-grow: 1;
+    font-family: 'Ubuntu', sans-serif;
+    weight: 700px;
+    font-size: 24px;
+    color: #FFA101;
+    margin-top: 125px;
+    padding: 12px 24px 12px 24px;
+}
+
+hr.footer-line{
+    border: 1px solid #C6C6C6;
+    margin-top: 30px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between; 
+    align-items: flex-start;
+    padding: 20px 72px 0px 72px;
+}
+
+.footer-kanan, .footer-tengah {
+    flex:1;
+}
+
+.footer-text{
+    font-family: 'Poppins', sans-serif;
+    weight:600px;
+    font-size: 20px;
+    color: #5F5D2D;
+    margin-bottom: 4px;
+}
+
+.footer-list{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    weight: 500px;
+    color: #C9C8AE;
+    margin-bottom: 4px;
+    text-decoration: none;
+}
+
+.footer-list:hover{
+    text-decoration: underline;
+}
+
+.gambar-footer {
+    text-align: center;
+    margin-top: 37px;
+    margin-botton: 37px;
+}
+
+.gambar-footer img {
+    display: block;
+    margin: auto;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

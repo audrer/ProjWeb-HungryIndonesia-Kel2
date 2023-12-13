@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Restaurant Page</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/flowbite@1.4.0/dist/flowbite.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap">
+    <style>
+        body, h1, p, a {
+            font-family: 'Ubuntu', sans-serif;
+        }
+
+        .font-extrabold {
+            font-family: 'Poppins', sans-serif;
+        }
+    </style>
+</head>
+<body class="bg-[#fff9e5]">
+    <div class="min-w-full">
+        <!--Navbar-->
+            <nav class="flex items-center justify-between px-16 bg-[#5F5D2D] bg-opacity-100 fixed-w-full h-20 z-10">
+                <a href="#" class="font-bold text-2xl text-[#fff9e5]">HungryIndonesia</a>                    
+                <a href="#"><img src="Image/menu.png" alt="menu" class="w-9"></a>
+            </nav>
+
+        <div class="flex">
+            <a href="#"><img src="Image/left arrow.png" alt="left arrow" class="w-8 mt-14 ml-24"></a>
+            <h1 class="text-[#5F5D2D] ml-5 mt-12 text-4xl font-extrabold">Soto Betawi by Soto Betawi H. Mamat</h1>
+        </div>
+        
+        <div class="flex">
+            <a href="#"><img src="Image/location.png" alt="location" class="w-6 mt-5 ml-24"></a>
+            <a href="https://maps.app.goo.gl/dk71C5mepSdZmQKJ9"><p class="text-[#5F5D2D] ml-7 underline mt-5 font-bold text-lg mr-12">Jl. Boulevard Raya Gading Serpong No.1, Pakulonan Bar., Kec. Klp.Dua, Kabupaten Tangerang, Banten 15810</p></a>
+        </div>
+
+    
+
+
+        <div class="flex justify-between">
+            <div class="w-48 h-12 mt-3 ml-24 border border-[#e5E0CD] rounded-3xl flex items-center  shadow-inner">
+                <img src="Image/Full star.png" alt="full star" class="w-5 ml-3">
+                <img src="Image/Full star.png" alt="full star" class="w-5 ml-1">
+                <img src="Image/Full star.png" alt="full star" class="w-5 ml-1">
+                <img src="Image/Full star.png" alt="full star" class="w-5 ml-1">
+                <img src="Image/Half star.png" alt="half star" class="w-6 ml-1">
+                <p class="text-md font-bold text-[#5F5D2D] ml-3">4.7/5</p>
+            </div>
+
+            <div class="w-44 h-12 mr-16 mt-3 mb-10 ml-24 border border-[#e5E0CD] rounded-3xl flex items-center shadow-inner">
+                <a href="#"><img src="Image/instagram.png" alt="instagram" class="w-7 ml-6"></a>
+                <a href="#"><img src="Image/facebook.png" alt="facebook" class="w-7 ml-5"></a>
+                <a href="#"><img src="Image/twitter.png" alt="twitter" class="w-7 ml-5"></a>
+            </div>
+
+        </div>
+
+        <div id="controls-carousel" class="relative w-full" data-carousel="static">
+    <!-- Carousel wrapper -->
+    <div class="relative h-56 overflow-hidden rounded-lg md:h-96">
+         <!-- Item 1 -->
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <div class="absolute flex justify-center w-92 -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
+            <img src="Image/resto carousel 1.png" alt="foto 4" class="w-92 ml-3 ">
+            <img src="Image/resto carousel 2.png" alt="foto 3" class="w-92 ml-3 ">
+            <img src="Image/resto carousel 3.png" alt="foto 6" class="w-92 ml-3 ">
+            </div>
+        </div>
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <div class="absolute flex justify-center w-92 -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
+            <img src="Image/resto carousel 2.png" alt="foto 4" class="w-92 ml-3 ">
+            <img src="Image/resto carousel 3.png" alt="foto 3" class="w-92 ml-3 ">
+            <img src="Image/resto carousel 4.png" alt="foto 6" class="w-92 ml-3 ">
+            </div>
+        </div>
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <div class="absolute flex justify-center w-92 -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
+            <img src="Image/resto carousel 3.png" alt="foto 4" class="w-92 ml-3 ">
+            <img src="Image/resto carousel 4.png" alt="foto 3" class="w-92 ml-3 ">
+            <img src="Image/resto carousel 5.png" alt="foto 6" class="w-92 ml-3 ">
+            </div>
+        </div>
+        <div class="hidden duration-700 ease-in-out" data-carousel-item>
+            <div class="absolute flex justify-center w-92 -translate-x-1/2 -translate-y-1/2 top-1/2 left-1/2">
+            <img src="Image/resto carousel 4.png" alt="foto 4" class="w-92 ml-3 ">
+            <img src="Image/resto carousel 5.png" alt="foto 3" class="w-92 ml-3 ">
+            <img src="Image/resto carousel 6.png" alt="foto 6" class="w-92 ml-3 ">
+            </div>
+        </div>
+    </div>
+    <!-- Slider controls -->
+    <button type="button" class="absolute top-0 start-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-prev>
+        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-[#f79d] dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+            <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 1 1 5l4 4"/>
+            </svg>
+            <span class="sr-only">Previous</span>
+        </span>
+    </button>
+    <button type="button" class="absolute top-0 end-0 z-30 flex items-center justify-center h-full px-4 cursor-pointer group focus:outline-none" data-carousel-next>
+        <span class="inline-flex items-center justify-center w-10 h-10 rounded-full bg-white/30 dark:bg-gray-800/30 group-hover:bg-white/50 dark:group-hover:bg-gray-800/60 group-focus:ring-4 group-focus:ring-white dark:group-focus:ring-gray-800/70 group-focus:outline-none">
+            <svg class="w-4 h-4 text-white dark:text-gray-800 rtl:rotate-180" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 6 10">
+                <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="m1 9 4-4-4-4"/>
+            </svg>
+            <span class="sr-only">Next</span>
+        </span>
+    </button>
+</div>
+
+
+        <p class="text-[#5F5D2D] ml-32 mr-32 text-justify mt-16 font-semibold text-xl">Soto Betawi H. Mamat is considered as one of the best Soto Betawi in town. Moreover, it was established in 1960 and has since grown into a legendary eateries in Tangerang. Lots of people compete to save a seat inside this eatery to savor the perfect combination of the meat and the coconut milk soup.</p>
+
+        <p class="text-[#5F5D2D] ml-32 mr-32 text-center mt-10 mb-10 font-semibold text-xl">Interested in cooking the recipes?</p>
+
+        <div class="flex justify-center mb-48">
+            <div class="w-full relative flex justify-center">
+                <img src="Image/Soto Betawi (Resto Page).png" alt="Soto Betawi" class="w-92 ml-3 absolute">
+                <button class="w-36 py-3 mb-4 font-semibold text-center text-amber-50 bg-[#ffa30a] absolute bottom-0 rounded-3xl shadow-inner shadow-xl hover:bg-amber-50 hover:text-[#ffa30a]">SOTO BETAWI</button>
+            </div>
+            <div class="w-full relative flex justify-center">
+                <img src="Image/Gado-gado.png" alt="Gado-gado" class="w-92 ml-3"> 
+                <button class="w-36 py-3 mb-4 font-semibold text-center text-amber-50 bg-[#ffa30a] absolute bottom-0 rounded-3xl shadow-inner shadow-xl hover:bg-amber-50 hover:text-[#ffa30a]">GADO-GADO</button>
+            </div>
+            <div class="w-full relative flex justify-center">
+                <img src="Image/Sate Kambing.png" alt="Sate Kambing" class="w-92 ml-3">
+                <button class="w-36 py-3 mb-4 font-semibold text-center text-amber-50 bg-[#ffa30a] absolute bottom-0 rounded-3xl shadow-inner shadow-xl hover:bg-amber-50 hover:text-[#ffa30a]">SATE KAMBING</button>
+            </div>
+        </div>
+
+          <p class="flex justify-center mt-36 text-amber-500 text-2xl font-bold">Uncover Tasty Treasures, One Recipe and Restaurant at a Time</p>
+        
+    <footer class="">
+        <hr class="h-px my-7 bg-stone-300 border-0 dark:bg-stone-300"/>
+
+        <div class="flex justify-center text-center gap-x-56">
+            <div>
+                <p class="mb-6 text-xl font-bold text-[#5f5D2D]">Company</p>
+                <ul class="text-stone-400 text-lg font-medium">
+                    <li class="mb-4">
+                        <a href="../PunyaJiel/PunyaJiel/AboutUs/AboutUs_Feedback/aboutusfb.html" class="hover:underline block">About us</a>
+                        <a href="../public/faq.html" class="hover:underline">FAQ</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div>
+                <p class="mb-6 text-md font-bold text-xl text-[#5f5D2D]">Products</p>
+                <ul class="text-stone-400 text-lg font-medium">
+                    <li class="mb-4">
+                        <a href="#" class="hover:underline block">Indonesian Recipe</a>
+                        <a href="#" class="hover:underline">Indonesian Restaurant</a>
+                    </li>
+                </ul>
+            </div>
+
+            <div>
+                <p class="mb-6 text-md font-bold text-xl text-[#5f5D2D]">Support</p>
+                <ul class="text-stone-400 text-lg font-medium">
+                    <li class="mb-4">
+                        <a href="#" class="hover:underline block">Help</a>
+                        <a href="#" class="hover:underline block">Terms</a>
+                        <a href="#" class="hover:underline">Privacy</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+
+        <hr class="h-px my-7 bg-stone-300 border-0 dark:bg-stone-300"/>
+        <div class="flex justify-center">
+            <a href="#"><img src="Image/instagram.png" alt="instagram" class="w-7 mr-2"></a>
+            <a href="#"><img src="Image/facebook.png" alt="facebook" class="w-7 mr-2"></a>
+            <a href="#"><img src="Image/twitter.png" alt="twitter" class="w-7"></a>
+        </div>
+        <h3 class="flex justify-center text-[#5F5D2D] text-sm mt-1 mb-14 font-bold">@ 2023 HungryIndonesia. All Right Reserved.</h3>
+    </footer>
+
+        <script>
+        const images = document.querySelectorAll('.flex img');
+        const nextBtn = document.getElementById('nextBtn');
+        const prevBtn = document.getElementById('prevBtn');
+        let currentIndex = 0;
+
+        function showImage(index) {
+            images.forEach((image, i) => {
+                if (i === index) {
+                    image.classList.remove('hidden');
+                } else {
+                    image.classList.add('hidden');
+                }
+            });
+        }
+
+        function updateButtons() {
+            nextBtn.classList.toggle('opacity-50', currentIndex === images.length - 3);
+            prevBtn.classList.toggle('opacity-50', currentIndex === 0);
+        }
+
+        nextBtn.addEventListener('click', () => {
+            if (currentIndex < images.length - 3) {
+                currentIndex++;
+                showImage(currentIndex);
+                updateButtons();
+            }
+        });
+
+        prevBtn.addEventListener('click', () => {
+            if (currentIndex > 0) {
+                currentIndex--;
+                showImage(currentIndex);
+                updateButtons();
+            }
+        });
+
+        // Initial setup
+        updateButtons();
+    </script>
+</body>
+</html>

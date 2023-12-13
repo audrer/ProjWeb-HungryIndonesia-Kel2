@@ -1,0 +1,222 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="afterlogin.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Ubuntu:wght@700&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@800&display=swap">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,0,0" />
+    <title>Home Page</title>
+</head>
+
+<body>
+    <nav class="navbar">
+        <div class="logo">
+            <a href="#" class="logo-link">
+                <p class="logo-text">HungryIndonesia</p>
+            </a>
+        </div>
+
+        <div class="drawer-icon">
+            <button onclick="handleButtonClick()">
+                <img src="burger.png" alt="">
+            </button>
+        </div>
+
+        <div class="drawer-container">
+            <ul class="drawer-list">
+                <li>Unknown</li>
+            </ul>
+            <ul class="drawer-list">
+                <li>Search Recipe</li>
+                <li>Search Resto</li>
+                <li>About Us</li>
+                <li>FAQ</li>
+                <li>My Review</li>
+                <li>Recent Recipe</li>
+                <li>My Cooklist</li>
+                <li>Log Out</li>
+            </ul>
+        </div>
+    </nav>
+        
+    <div class="title">
+            <h1>Explore Indonesian Culinary</h1>
+            <h2>Cook. Eat. Visit. Review.</h2>
+    </div>
+
+    <div class="after-login">
+        <div>
+            <button onclick="handleButtonClick()">
+                <img src="searchrecipe.png" alt="searchrecipe">
+            </button>
+        </div>
+
+        <div>
+            <button onclick="handleButtonClick()">
+                <img src="searchrestaurant.png" alt="searchrestaurant">
+            </button>
+        </div>
+
+        <div>
+            <button onclick="handleButtonClick()">
+                <img src="mycooklist.png" alt="mycooklist">
+            </button>
+        </div>
+
+        <div>
+            <button onclick="handleButtonClick()">
+                <img src="myreview.png" alt="myreview">
+            </button>
+        </div>
+
+        <div>
+            <button onclick="handleButtonClick()">
+                <img src="recentrecipe.png" alt="recentrecipe">
+            </button>
+        </div>
+    </div>      
+
+    <p class="otwclosing">Uncover Tasty Treasures, One Recipe and Restaurant at a Time</p>
+
+    <div class="map">
+        <img src="PETA INDONESIA.png" alt="">
+    </div>
+    
+    <script src="afterlogin.js"></script>
+
+    <div class="recipe">
+        <h3>Indonesian Traditional Food Recipe</h13>
+    </div>
+    
+    <div class="container">
+        <div class="slider-wrapper">
+            <ul class="image-list">
+                <li class="image-item-container">
+                    <img class="image-item" src="recipe_jawa.png" alt="img-1" />
+                    <button class="image-button">Jawa</button>
+                </li>
+                <li class="image-item-container">
+                    <img class="image-item" src="recipe_sumatra.png" alt="img-2" />
+                    <button class="image-button">Sumatra</button>
+                </li>
+                <li class="image-item-container">
+                    <img class="image-item" src="recipe_ntt.png" alt="img-3" />
+                    <button class="image-button">NTT</button>
+                </li>
+                <li class="image-item-container">
+                    <img class="image-item" src="recipe_kalimantan.png" alt="img-4" />
+                    <button class="image-button">Kalimantan</button>
+                </li>
+                <li class="image-item-container">
+                    <img class="image-item" src="recipe_sulawesi.png" alt="img-5" />
+                    <button class="image-button">Sulawesi</button>
+                </li>
+                <li class="image-item-container">
+                    <img class="image-item" src="recipe_papua.png" alt="img-6" />
+                    <button class="image-button">Papua</button>
+                </li>
+                <li class="image-item-container">
+                    <img class="image-item" src="recipe_bali.png" alt="img-7" />
+                    <button class="image-button">Bali</button>
+                </li>
+            </ul>
+            <button id="prev-slide" class="slide-button material-symbols-rounded">
+                chevron_left
+            </button>
+            <button id="next-slide" class="slide-button material-symbols-rounded">
+                chevron_right
+            </button>
+        </div>
+    </div>
+
+    <div class="restaurant">
+        <h3>Indonesian Traditional Food Restaurant</h13>
+    </div>
+
+    <div class="container2">
+        <div class="slider-wrapper2">
+            <ul class="image-list2">
+                <li class="image-item-container2">
+                    <img class="image-item2" src="resto_jawa.png" alt="img-1" />
+                    <button class="image-button2">Jawa</button>
+                </li>
+                <li class="image-item-container2">
+                    <img class="image-item2" src="resto_sumatra.png" alt="img-2" />
+                    <button class="image-button2">Sumatra</button>
+                </li>
+                <li class="image-item-container2">
+                    <img class="image-item2" src="resto_ntt.png" alt="img-3" />
+                    <button class="image-button2">NTT</button>
+                </li>
+                <li class="image-item-container2">
+                    <img class="image-item2" src="resto_kalimantan.png" alt="img-4" />
+                    <button class="image-button2">Kalimantan</button>
+                </li>
+                <li class="image-item-container2">
+                    <img class="image-item2" src="resto_sulawesi.png" alt="img-5" />
+                    <button class="image-button2">Sulawesi</button>
+                </li>
+                <li class="image-item-container2">
+                    <img class="image-item2" src="resto_papua.png" alt="img-6" />
+                    <button class="image-button2">Papua</button>
+                </li>
+                <li class="image-item-container2">
+                    <img class="image-item2" src="resto_bali.png" alt="img-7" />
+                    <button class="image-button2">Bali</button>
+                </li>
+            </ul>
+            <button id="prev-slide" class="slide-button2 material-symbols-rounded">
+                chevron_left
+            </button>
+            <button id="next-slide" class="slide-button2 material-symbols-rounded">
+                chevron_right
+            </button>
+        </div>
+    </div>
+
+    <hr class="footer-line">
+    <footer>
+        <div class="footer-kanan">
+            <p class="footer-text">Company</p>
+            <div class="footer-list">
+                <a href="#" class="footer-list">About Us</a>
+            </div>
+            <div class="footer-list">
+                <a href="#" class="footer-list">FAQ</a>
+            </div>
+        </div>
+        <div class="footer-tengah">
+            <p class="footer-text">Products</p>
+            <div class="footer-list">
+                <a href="#" class="footer-list">Indonesian Recipe</a>
+            </div>
+            <div class="footer-list">
+                <a href="#" class="footer-list">Indonesia Restaurant</a>
+            </div>
+        </div>
+        <div class="footer-kiri">
+            <p class="footer-text">Support</p>
+            <div class="footer-list">
+                <a href="#" class="footer-list">Help</a>
+            </div>
+            <div class="footer-list">
+                <a href="#" class="footer-list">Terms</a>
+            </div>
+            <div class="footer-list">
+                <a href="#" class="footer-list">Privacy</a>
+            </div>
+        </div>
+    </footer>
+    <hr class="footer-line">
+    <div class="gambar-footer">
+        <img src="ig twitter facebook.png" alt="">
+    </div>
+</body>
+
+
+</html>
+
+

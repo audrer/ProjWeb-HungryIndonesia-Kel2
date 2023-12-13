@@ -1,0 +1,354 @@
+body {
+    margin-top: 80px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 0;
+    background: #FFFAE5;
+}
+
+.navbar {
+    /* width: 1440px; */
+    width: auto;
+    height: 80px;
+    background: #5F5D2D;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    z-index: 1000;
+}
+
+
+.logo-text {
+    width: 195px;
+    height: 28px;
+    font-family: 'Ubuntu', sans-serif;
+    font-size: 24px;
+    font-weight: 700;
+    line-height: 28px;
+    letter-spacing: 0em;
+    text-align: left;
+    color: #FFFAE5;
+   
+    margin-left: 72px;
+}
+
+.logo-link{
+    text-decoration: none;
+    color: inherit;
+}
+
+.drawer-icon{
+    margin-right: 72px;
+}
+
+.drawer-icon button{
+    background: none;
+    border: none;
+    cursor: pointer;
+}
+
+.drawer-container {
+    position: absolute;
+    right: 0;
+    top: 50px;
+    width: 188px;
+    height: 453px;
+    border-radius: 30px 0 0 30px;
+    background-color: #5F5D2D;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    display: none;
+}
+
+.drawer-container.active {
+    transform: translateY(0);
+}
+
+.drawer-list {
+    list-style-type: none;
+    padding: 10px;
+}
+
+.drawer-list li {
+    font-size: 20px;
+    color: #FFFAE5;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 10px;
+}
+
+.drawer-list li:hover {
+    background-color: #555;
+}
+
+.back-icon button{
+    background: none;
+    border: none;
+    cursor: pointer; 
+    display: flex;
+    align-items: center 
+}
+
+.back-icon{
+    margin-left:80px;
+    margin-top: 10px;
+    margin-right: 10px;
+}
+
+.back-icon button img{
+    width: 32px;
+    height: 32px;
+    margin-right: 8px;
+}
+
+.title{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+
+h1{
+    letter-spacing: 0em;
+    font-size: 36px;
+    line-height: 54px;
+    color: #5F5D2D;
+    font-family: 'Poppins', sans-serif;
+    font-weight: 800;
+    margin-right: 100px;
+    text-align: left;
+    flex-grow: 1;
+}
+
+.list-dropdown{
+    padding: 12px 40px 12px 40px;
+    margin-left: 50px;
+    position: relative; 
+}
+
+.rounded{
+    border: 2px solid #5F5D2D;
+    border-radius: 60px;
+    width: 174px;
+    
+}
+
+.list-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-left: 5px;
+    margin-right: 5px;
+    text-align: center;
+    
+}
+
+.list {
+    font-size: 20px;
+    color: #5F5D2D;
+    font-family: 'Poppins', sans-serif;
+    weight: 600;
+    gap: 12px;
+    margin: 10px;
+}
+
+.list-ans {
+    list-style: none;
+    display: block;
+    padding: 0;
+    cursor: pointer;
+    border: 2px solid #5F5D2D;
+    border-radius: 25px;
+    width: 174px;
+    
+}
+
+.list-ans li {
+    font-size: 20px;
+    color: #5F5D2D;
+    font-family: 'Poppins', sans-serif;
+    margin-top: 10px;
+    margin-left: 8px;
+    weight: 600;
+    padding: 8px 16px;
+    transition: background-color 0.3s;
+    display:block;
+    
+}
+
+.list-ans li:hover{
+    background-color: #C9C8AE;
+
+}
+
+
+.list-dropdown .rounded .list-ans {
+    display: none;
+    transform-origin: top center;
+    position: absolute;
+}
+
+.list-dropdown .rounded.show-answer .list-ans {
+    display: block;
+}
+
+.list-header{
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.list-header .list{
+    margin-left: auto;
+    margin-right: auto;
+    
+}
+
+.button-rounded{
+    border: 3px solid #5F5D2D;
+    border-radius: 60px;
+    padding: 24px 48px 24px 48px;
+    margin-bottom:40px;
+    margin-left: 72px;
+    margin-right: 72px;
+    background-color: #5F5D2D;
+}
+
+.spaces {
+    /* Your default styles for .spaces */
+    margin-top: 90px; /* Set the default margin-top */
+    transition: margin-top 0.3s; /* Add transition for smooth animation */
+}
+
+
+.review {
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 1610px;
+    height: auto;
+    border: 1px solid rgba(0, 0, 0, 0.3); /* Warna border dengan tingkat transparansi 30% */
+    border-radius: 40px;
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.1) inset; /* Menambahkan bayangan pada border */
+    background-color: #FFFFFF;
+    transition: margin-top 0.3s;
+}
+
+.judul-review{
+    font-family: 'Poppins', sans-serif;
+    margin-top: 20px;
+    margin-left: 50px;
+    font-size: 20px;
+    color: #5F5D2D;
+
+}
+
+.star-rating {
+    margin-left: 40px;
+    font-size: 0;
+    display: flex;
+    align-items: center;
+     
+  }
+  
+  .star-container {
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+    
+  }
+  
+  .star {
+    width: 40px; 
+    height: 40px;
+    display: inline-block;
+    background-image: url('../element/Full star (1).png'); 
+    background-size: cover;
+  }
+  
+  .star.full {
+    background-image: url('../element/Full star.png'); 
+  }
+
+  .rating-info {
+    font-family: 'Poppins', sans-serif;
+    margin-left: 10px; 
+    font-size: 20px;
+    color: #5F5D2D;
+    display: inline-block;
+
+  }
+
+  .isi {
+    font-family: 'Poppins', sans-serif;
+    margin-top: 20px;
+    margin-left: 50px;
+    margin-bottom: 30px;
+    font-size: 16px;
+    color: #5F5D2D;
+    max-width: 1500px; 
+  }
+ 
+.otwclosing{
+    margin:0;
+    text-align: center;
+    flex-grow: 1;
+    font-family: 'Ubuntu', sans-serif;
+    weight: 700px;
+    font-size: 24px;
+    color: #FFA101;
+    margin-top: 125px;
+    padding: 12px 24px 12px 24px;
+}
+
+hr.footer-line{
+    border: 1px solid #C6C6C6;
+    margin-top: 30px;
+}
+
+footer {
+    display: flex;
+    justify-content: space-between; 
+    align-items: flex-start;
+    padding: 20px 72px 0px 72px;
+}
+
+.footer-kanan, .footer-tengah {
+    flex:1;
+}
+
+.footer-text{
+    font-family: 'Poppins', sans-serif;
+    weight:600px;
+    font-size: 20px;
+    color: #5F5D2D;
+    margin-bottom: 4px;
+}
+
+.footer-list{
+    font-family: 'Poppins', sans-serif;
+    font-size: 16px;
+    weight: 500px;
+    color: #C9C8AE;
+    margin-bottom: 4px;
+    text-decoration: none;
+}
+
+.footer-list:hover{
+    text-decoration: underline;
+}
+
+.gambar-footer {
+    text-align: center;
+    margin-top: 37px;
+    margin-botton: 37px;
+}
+
+.gambar-footer img {
+    display: block;
+    margin: auto;
+    cursor: pointer;
+}
+
